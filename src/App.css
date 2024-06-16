@@ -1,0 +1,129 @@
+* {
+     position: relative;
+     box-sizing: border-box !important;
+     z-index: 1;
+}
+
+#particles {
+     position: absolute;
+     z-index: -2;
+     width: 100%;
+     height: 100%;
+}
+
+#homeContainer {
+     display: flex;
+     align-items: center;
+     height: 80vh;
+}
+
+#viewBtnWorkout:hover {
+     background-color: #0a58ca !important;
+     color: white !important;
+}
+#editBtnWorkout:hover {
+     background-color: white !important;
+     color: #0a58ca !important;
+}
+#deleteBtnWorkout:hover {
+     background-color: white !important;
+     color: black !important;
+     border: 1px solid black;
+}
+
+#modalHeaderViewWorkout,
+#modalBodyViewWorkout,
+#modalFooterViewWorkout {
+     border: none;
+}
+
+#cardContainerViewWorkout {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+}
+.cardBodyViewWorkout {
+     height: 15em;
+}
+#cardImgModalViewWorkout {
+     object-fit: contain;
+     max-height: 10em;
+}
+
+.navbar-toggler-icon {
+     filter: drop-shadow(0px 0px 0.5px #ffffff);
+}
+
+#LoginForm {
+     padding: 3em;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 30em;
+     height: 30em;
+     border-radius: 10px;
+     box-shadow: 1px 1px 10px 10px rgba(70, 70, 70, 0.212);
+}
+
+#LoginFormContainer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: -5em;
+     width: 100vw;
+     height: 100vh;
+}
+
+#tableContainer {
+     border: 0px solid transparent;
+}
+#tableContainer > tbody > tr > td {
+     background-color: #ffffffc9;
+}
+#tableContainer > thead > tr > th {
+     background-color: #ffffffc9;
+}
+#itemContainer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.xl_font {
+     font-size: 6em;
+}
+.sm_font {
+     font-size: small;
+}
+
+@media (max-width: 576px) {
+     .xl_font {
+          font-size: clamp(4em, 2vw, 6em);
+     }
+     .navbar {
+          z-index: 2;
+          min-width: 400px;
+     }
+     #cardImgModalViewWorkout {
+          object-fit: contain;
+          max-height: 7em;
+     }
+     #tableContainer {
+          min-width: 350px;
+          overflow-x: auto;
+     }
+     #LoginForm {
+          min-width: 400px;
+          box-shadow: none;
+     }
+     #LoginFormContainer {
+          margin-left: -1em;
+          padding: 0;
+          min-width: 400px;
+     }
+     .modal-backdrop {
+          width: 100% !important;
+          height: 100% !important;
+     }
+}
